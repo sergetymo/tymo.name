@@ -8,9 +8,11 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "parcel src/index.html --open",
-    "build": "parcel build src/index.html --public-url . --no-source-maps --no-content-hash --no-cache"
+    "build": "parcel build src/index.html --public-url . --no-source-maps --no-content-hash --no-cache",
+    "lint:html": "htmlhint src/**/*.html"
   },
   "devDependencies": {
+    "htmlhint": "^0.13.0",
     "parcel-bundler": "^1.12.4"
   }
 }
