@@ -8,11 +8,15 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "parcel src/index.html --open",
-    "build": "parcel build src/index.html --public-url . --no-source-maps --no-content-hash --no-cache",
-    "lint:html": "htmlhint src/**/*.html"
+    "build": "parcel build src/index.html --public-url . --no-source-maps --no-content-hash src/**/*.* --no-cache",
+    "lint": "yarn lint:html && yarn lint:css",
+    "lint:html": "htmlhint src/**/*.html",
+    "lint:css": "stylelint src/**/*.css"
   },
   "devDependencies": {
     "htmlhint": "^0.13.0",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "stylelint": "^13.5.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
