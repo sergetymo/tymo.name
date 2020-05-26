@@ -23,19 +23,25 @@ body {
   }
 }
 
-header, main {
-  padding: .5rem 1rem 1.5rem;
+header,
+main {
+  padding: 0.5rem 1rem 1.5rem;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.2;
   letter-spacing: -0.005em;
   padding-top: 1rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 h1 {
@@ -62,25 +68,28 @@ h1 + p {
   font-size: 1.25rem;
 }
 
-a, a:active, a:visited {
+a,
+a:active,
+a:visited {
   color: inherit;
-  transition: opacity .3s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 
 a:hover {
-  opacity: .42;
+  opacity: 0.42;
 }
 
 blockquote {
   margin: 0;
-  padding: .5rem 0 1rem 1.5rem;
+  padding: 0.5rem 0 1rem 1.5rem;
 }
 
 blockquote > footer {
   font-style: italic;
 }
 
-ol, ul {
+ol,
+ul {
   margin: 0;
   padding: 0 0 1rem 2.5ch;
   list-style: none;
@@ -107,28 +116,31 @@ ol {
 
 ol > li::before {
   counter-increment: list;
-  content: counter(list)".";
+  content: counter(list) ".";
 }
 
-p + ol, p + ul {
+p + ol,
+p + ul {
   margin-top: -1rem;
 }
 
 span {
-  margin-right: .7ch;
+  margin-right: 0.7ch;
 }
 
-code {
-  background-color: rgba(0,0,0,.2);
-  display: inline-block;
-  padding: 0 .5ch;
+code,
+pre {
+  background-color: rgba(0, 0, 0, 0.2);
   font-family: "JetBrains Mono", monospace;
   border-radius: 3px;
 }
 
+code {
+  display: inline-block;
+  padding: 0 0.5ch;
+}
+
 pre {
-  background-color: rgba(0,0,0,.2);
-  font-family: "JetBrains Mono", monospace;
-  padding: .25rem 1rem;
+  padding: 0.25rem 1rem;
   margin: 0 -1rem;
 }
