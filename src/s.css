@@ -1,8 +1,134 @@
-:root {
-  --f: 20px;
+@font-face {
+  font-family: "JetBrains Mono";
+  src: local("JetBrainsMono-Regular");
 }
 
 html {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: var(--f);
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+body {
+  background-color: #bebebe;
+  color: #171717;
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #171717;
+    color: #bebebe;
+  }
+}
+
+header, main {
+  padding: .5rem 1rem 1.5rem;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+p {
+  max-width: 38rem;
+  padding-bottom: 1rem;
+}
+
+h1 + p {
+  font-size: 1.25rem;
+}
+
+a, a:active, a:visited {
+  color: inherit;
+  transition: opacity .3s ease-out;
+}
+
+a:hover {
+  opacity: .42;
+}
+
+blockquote {
+  margin: 0;
+  padding: .5rem 0 1rem 1.5rem;
+}
+
+blockquote > footer {
+  font-style: italic;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0 0 1rem 2.5ch;
+  list-style: none;
+}
+
+li {
+  max-width: calc(38rem - 2.5ch);
+}
+
+li::before {
+  display: inline-block;
+  width: 2.5ch;
+  margin-left: -2.5ch;
+  font-weight: 100;
+}
+
+ul > li::before {
+  content: "\2014";
+}
+
+ol {
+  counter-reset: list;
+}
+
+ol > li::before {
+  counter-increment: list;
+  content: counter(list)".";
+}
+
+p + ol, p + ul {
+  margin-top: -1rem;
+}
+
+span {
+  margin-right: .7ch;
+}
+
+code {
+  background-color: rgba(0,0,0,.2);
+  display: inline-block;
+  padding: 0 .5ch;
+  font-family: "JetBrains Mono", monospace;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: rgba(0,0,0,.2);
+  font-family: "JetBrains Mono", monospace;
+  padding: .25rem 1rem;
+  margin: 0 -1rem;
 }
