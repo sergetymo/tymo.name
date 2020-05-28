@@ -2,4 +2,5 @@ dev
 dist
 node_modules
 .cache
+.env
 
