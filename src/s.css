@@ -79,6 +79,7 @@ a:active,
 a:visited {
   color: inherit;
   transition: opacity 0.3s ease-out;
+  text-decoration-thickness: 0.5px;
 }
 
 a:hover {
