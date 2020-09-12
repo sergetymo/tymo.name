@@ -1,0 +1,237 @@
+html {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #171717;
+  margin: 0;
+  line-height: 1;
+  padding: 6% 3.7%;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #171717;
+    color: #bebebe;
+  }
+}
+
+section {
+  padding: 17px 0;
+  max-width: 670px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure {
+  margin: 0;
+}
+
+/* ch=14 lg=17 */
+p {
+  /* background: rgba(255,255,255,.15); */
+  font-size: 21.0205px;
+  line-height: 31px;
+  padding: 0.05px 0;
+  margin-bottom: 31px;
+  position: relative;
+}
+
+p::before {
+  content: "";
+  margin-top: -0.4192em;
+  display: block;
+  height: 0;
+}
+
+p::after {
+  content: "";
+  margin-bottom: -0.3943em;
+  display: block;
+  height: 0;
+}
+
+blockquote {
+  padding: 0 0 17px 17px;
+}
+
+blockquote > p {
+  margin-bottom: 17px;
+  font-style: italic;
+}
+
+a,
+a:active,
+a:visited {
+  color: inherit;
+  transition: opacity 0.2s ease-out;
+  text-decoration-thickness: 0.5px;
+}
+
+a:hover {
+  opacity: 0.42;
+}
+
+picture,
+img {
+  max-width: 100%;
+}
+
+figure {
+  padding-bottom: 17px;
+  overflow-x: auto;
+}
+
+picture > img {
+  margin-bottom: 17px;
+  display: block;
+  border-radius: 4px;
+}
+
+pre {
+  font-size: 16.6667px;
+  line-height: 22px;
+  padding: 0.05px 0;
+}
+
+pre::before {
+  content: "";
+  margin-top: -0.313em;
+  display: block;
+  height: 0;
+}
+
+pre::after {
+  content: "";
+  margin-bottom: -0.293em;
+  display: block;
+  height: 0;
+}
+
+code,
+pre {
+  font-variant-ligatures: normal;
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* ch=17 lg=17 */
+h3,
+h1 + p {
+  font-size: 25.5249px;
+  line-height: 34px;
+  padding: 0.05px 0;
+  margin-bottom: 17px;
+}
+
+h3::before,
+h1 + p::before {
+  content: "";
+  margin-top: -0.3474em;
+  display: block;
+  height: 0;
+}
+
+h3::after,
+h1 + p::after {
+  content: "";
+  margin-bottom: -0.3225em;
+  display: block;
+  height: 0;
+}
+
+h1 + p {
+  margin-bottom: 31px;
+}
+
+/* ch=21 lg=17 */
+h2 {
+  font-size: 31.5308px;
+  line-height: 38px;
+  padding: 0.05px 0;
+  margin-bottom: 31px;
+}
+
+h2::before {
+  content: "";
+  margin-top: -0.2836em;
+  display: block;
+  height: 0;
+}
+
+h2::after {
+  content: "";
+  margin-bottom: -0.2587em;
+  display: block;
+  height: 0;
+}
+
+figure > figcaption {
+  opacity: 0.42;
+}
+
+/* ch=11 lg=17 */
+h4,
+nav,
+figure > figcaption:last-child {
+  font-size: 16.5161px;
+  line-height: 28px;
+  padding: 0.05px 0;
+  margin-bottom: 17px;
+}
+
+h4::before,
+nav::before,
+figure > figcaption:last-child::before {
+  content: "";
+  margin-top: -0.5301em;
+  display: block;
+  height: 0;
+}
+
+h4::after,
+nav::after,
+figure > figcaption:last-child::after {
+  content: "";
+  margin-bottom: -0.5052em;
+  display: block;
+  height: 0;
+}
+
+h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.42;
+}
+
+nav {
+  padding-bottom: 48px;
+}
+
+/* ch=26 lg=17 */
+h1 {
+  font-size: 39.0381px;
+  line-height: 43px;
+  padding: 0.05px 0;
+  margin-bottom: 31px;
+}
+
+h1::before {
+  content: "";
+  margin-top: -0.2315em;
+  display: block;
+  height: 0;
+}
+
+h1::after {
+  content: "";
+  margin-bottom: -0.2066em;
+  display: block;
+  height: 0;
+}
