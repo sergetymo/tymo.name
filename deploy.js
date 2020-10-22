@@ -1,8 +1,15 @@
-const dotenv = require('dotenv')
+const args = process.argv.slice(2)
+
+if (args.length === 0) {
+  const dotenv = require('dotenv')
+  dotenv.config()
+}
+
+console.log(process.env)
+
 const FtpDeploy = require('ftp-deploy')
 const path = require('path')
 
-dotenv.config()
 const ftp = new FtpDeploy()
 
 if (process.env.FTP_USER && process.env.FTP_PASS && process.env.FTP_HOST) {
