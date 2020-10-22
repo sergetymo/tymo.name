@@ -18,4 +18,4 @@ jobs:
         env:
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASS: ${{ secrets.FTP_PASS }}
-          FTP_host: ${{ secrets.FTP_HOST }}
+          FTP_HOST: ${{ secrets.FTP_HOST }}

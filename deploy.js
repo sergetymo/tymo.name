@@ -30,5 +30,6 @@ if (process.env.FTP_USER && process.env.FTP_PASS && process.env.FTP_HOST) {
     .then(result => console.log(`Finished: ${result}`))
     .catch(error => console.log(error))
 } else {
-  console.error('Couldn\'t find .env file')
+  console.error('Couldn\'t find needful env vars')
+  process.exit(1)
 }
