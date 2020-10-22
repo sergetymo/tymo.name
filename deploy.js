@@ -20,7 +20,7 @@ if (process.env.FTP_USER && process.env.FTP_PASS && process.env.FTP_HOST) {
     port: 21,
     localRoot: path.join(__dirname, 'dist'),
     remoteRoot: '/',
-    include: ['*.html', '*.css', '*.pdf', '*.ico'],
+    include: ['*.html', '*.css', '*.pdf', '*.svg', '*.jpg'],
     deleteRemote: true,
     forcePasv: true,
   }
